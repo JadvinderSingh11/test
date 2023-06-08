@@ -1,3 +1,15 @@
-GoD please please please keep a mercy on us
+Learning Code
 
-Please make this successfully this time
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Bostoncream - This is the command useful for upstreaming the branches to the remote respository (This is very important)
+
+    git checkout main - This is for checkout in between of Main and branches
+
+    git pull origin main - This command is very useful and best practice before pushing any information from branches
+
+    git merge Bostoncream - This command is very useful for merging the branch with the checked out Branch or main
+
+    git commit -m " Merge BostonCream into main" - This command is for just commit
+
+    git push origin main - This command is very useful for pushing the local files into remote repository.
