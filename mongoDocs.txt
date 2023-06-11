@@ -1,0 +1,39 @@
+Mongo Database 
+Data in the mongo is just a document or in simple words it is a object which is contains key and values where every key responds to a value assigned.
+For Instance :
+ Data = { name : “Jadvinder Singh”, About : “Kujj shikte rehna hai”}
+
+	values
+keys
+
+Now to create serve on your computer:
+First we need download Mongo community serve and along with that we have install mongosh ( mongo shell ).
+After, just declare the environmental variable in the system variables under the path section.
+Now just 	 CMD.
+
+Here are some commands to start with:
+Show dbs – This command shows all the created database.
+
+How to perform CRUD( Create, Read, Update, and Delete ) – 
+Create – while creating a database in the mongo we have to run the command
+	Use <name of the database>
+Then, insert operations – 
+	Insert one – db.<collection name>.insertOne({ document})
+	Insert many - db.<collection name>.insertMany([{ document1},{document2}])
+Read – just run find command
+	db.<collection name>.find({}) – for fetching all the documents.
+db.<collection name>.find({<key>:<value>}) – for fetching one the document.
+
+Find function in Mongo db-
+Db.<collection>.find({ <key> : {$lt: <value>}) – Where we need to find values less than a particular value.
+Db.<collection>.find({ <key> : {$gt: <value>}) – Where we need to find values greater than a particular value.
+ Arrays in querries –
+	Find a array with same order-
+	db.inventory.find( { <key>: ["value1", "value2"] } )
+	Find all the elements with these elements in any order-
+	db.inventory.find( { <key>: { $all: ["value1", "value2"] } } )
+	Finding between a range-
+	db.inventory.find( { <key>: { $gt: 15, $lt: 20 } } )
+	Find any element in an array in that particular range - 
+db.inventory.find( { <key>: { $elemMatch: { $gt: 22, $lt: 30 } } } )
+
